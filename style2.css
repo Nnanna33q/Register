@@ -1,0 +1,134 @@
+:root {
+    --primary-color: white;
+    --secondary-color: blue;
+    --tertiary-color: black;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid var(--secondary-color);
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 1rem
+}
+
+input {
+    display: block;
+    margin: 0.5rem auto;
+}
+
+label {
+    color: #808080;
+    visibility: hidden;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 70%;
+    border: none;
+    border-bottom: 3px solid var(--tertiary-color);
+    position: relative;
+    font-size: 1rem;
+}
+
+input {
+    text-align: center
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    width: 80%;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+button:active {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.login {
+    padding: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.error-message {
+    color: red;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+        border: none;
+    }
+}
+
+.red {
+    border-bottom: 3px solid red;
+}
+
+
+/* For night mode */
+.container {
+    width: 100px;
+    height: fit-content;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    outline: 3px solid white;
+    transition: 0.2s;
+}
+
+.ball {
+    width: 20%;
+    height: 20px;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.transform {
+    transform: translateX(80px);
+    transition: 0.2s;
+    background-color: white;
+}
+
+.changeBg {
+    background-color: black;
+    color: white;
+}
+
+.containerBg {
+    background-color: blue;
+    transition: 0.2s;
+    outline: 3px solid black;
+}
+
+.input-toggle {
+    background-color: black;
+    border-bottom: 3px solid white;
+    color: white;
+}
